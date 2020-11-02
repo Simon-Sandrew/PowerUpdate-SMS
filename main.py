@@ -1,0 +1,1 @@
+#main run function for PowerUpdateimport compare_grades as cgimport check_time as ctwhile True:    running = ct.time_check()    if running == True:        cg.check_each_grade()

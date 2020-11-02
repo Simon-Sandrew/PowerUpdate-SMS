@@ -1,0 +1,1 @@
+# confirms that the current time is not over night, this is to reduce the amount of time powerupdate has to workfrom datetime import datetimedef time_check():    now = datetime.now()    current_time = now.strftime("%H:%M:%S")    start = '00:00:00'    end = '07:00:00'    if current_time > start and current_time < end:        return False    else:        return True
